@@ -1,0 +1,212 @@
+body {
+    background-color: #202533;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 50px;
+}
+
+h1,
+h2 {
+    color: #ffff;
+    font-family: fantasy;
+
+}
+
+p {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+table {
+    box-shadow: 0px 4px 8px rgb(91, 108, 151);
+}
+/* aqui estamos agregando estilos al navbar */
+.collapse {
+    position: relative;
+    top: -3px;
+}
+
+.nav-link {
+    border-radius: 15px;
+    color: rgba(206, 150, 67, 0.856);
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link h5 {
+    margin: 0px;
+    padding: 2px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.nav-link:hover {
+    color: rgb(216, 16, 16);
+    border-color: rgb(4, 34, 80);
+    box-shadow: 0 0 10px rgba(19, 6, 97, 0.788);
+    transition: all 0.3s ease-in-out;
+}
+
+/* aqui agregamos estilos al boton donde se encuentran los premios del video juego */
+
+#premiosButton {
+    background-color: #212529;
+    color: rgba(174, 187, 194, 0.993);
+    font-size: 27px;
+    animation: Boton-premio 3s infinite;
+    box-shadow: 0 0 30px rgba(0, 0, 255, 0.3);
+    border: 2px solid rgba(8, 8, 155, 0.5);
+    transition: all 0.3s ease;
+}
+
+#premiosButton:hover {
+    background-color: #21374d;
+    color: rgb(226, 205, 134);
+    transform: scale(1.07);
+    text-shadow: 0 0 8px rgba(246, 255, 164, 0.699);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes Boton-premio {
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgb(9, 11, 97);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgb(13, 15, 138);
+    }
+}
+
+/* agregar estilos al contenedor que se despliega al presionar el boton de los premios */
+
+.custom-shadow {
+    background-color: #0c1721;
+    animation: caja-premio 3s infinite;
+    border-color: rgba(255, 255, 0, 0.692);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+@keyframes caja-premio {
+    
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgba(221, 218, 9, 0.658);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(211, 214, 18, 0.863);
+    }
+}
+
+/* modificar el contenedor principal */
+.custom-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* darle estilo a los botones de redireccionamiento de compra */
+
+.botones-compra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.boton-neon {
+    flex: 1;
+    background-color: rgb(26, 25, 25);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid transparent;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 120px;
+}
+
+.button-image {
+    width: 90%;
+
+    height: 95%;
+
+    object-fit: cover;
+
+    position: relative;
+
+    top: 0;
+    left: 0;
+}
+
+
+@keyframes Steam-boton {
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgb(9, 11, 97);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgb(13, 15, 138);
+    }
+}
+
+@keyframes ps-boton-d {
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.6);
+    }
+}
+
+@keyframes xbox-boton-d {
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgba(47, 134, 13, 0.63);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgb(63, 175, 18);
+    }
+}
+
+
+.Steam-boton {
+    padding: 5px;
+    animation: Steam-boton 3s infinite;
+    border: 2px solid rgba(8, 8, 155, 0.5);
+}
+
+
+.ps-boton {
+    animation: ps-boton-d 3s infinite;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+
+.xbox-boton {
+    animation: xbox-boton-d 3s infinite;
+    border: 2px solid rgba(0, 255, 0, 0.5);
+}
+
+
+.Steam-boton:hover {
+    border-color: rgb(32, 32, 252);
+}
+
+.ps-boton:hover {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.xbox-boton:hover {
+    border-color: rgba(0, 255, 0, 1);
+}
