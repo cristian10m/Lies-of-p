@@ -32,6 +32,7 @@ table {
     backdrop-filter: blur(0.4rem);
     position: fixed;
     width: 90%;
+    z-index: 10;
 }
 .cont2{
     padding-top: 100px;
