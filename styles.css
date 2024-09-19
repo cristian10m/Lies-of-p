@@ -26,6 +26,17 @@ table {
     top: -3px;
 }
 
+.fixed2{
+    top: 0;
+    padding-top: 10px;
+    backdrop-filter: blur(0.4rem);
+    position: fixed;
+    width: 90%;
+}
+.cont2{
+    padding-top: 100px;
+}
+
 .nav-link {
     border-radius: 15px;
     color: rgba(206, 150, 67, 0.856);
